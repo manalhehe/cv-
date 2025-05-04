@@ -1,0 +1,142 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #1a1a1a;
+    position: relative;
+}
+
+/* Logo */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+/* Conteneur principal */
+.hero-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to bottom, white 70%, black 30%);
+}
+
+/* PARTIE GAUCHE - Bio */
+.left-side {
+    width: 50%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Texte personnel */
+.intro {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+.title {
+    font-size: 16px;
+    color: gray;
+    margin: 10px 0 30px 0;
+}
+
+/* Icônes sociales */
+.social-icons a {
+    display: inline-block;
+    background: #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background: #999;
+}
+
+/* PARTIE DROITE - Image et menu */
+.right-side {
+    width: 50%;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* Image centrée */
+.profile-img {
+    max-height: 80%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Navigation */
+.top-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 14px;
+}
+
+.top-nav span {
+    cursor: pointer;
+    color: white;
+}
+
+/* Bouton Contact */
+.contact-btn {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e65c00;
+}
+
+/* BASE CENTERING */
+.about, .portfolio, .contact, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* IMAGE SETTINGS */
+.about img, .portfolio img, .contact img, .footer img {
+    max-width: 100%;
+    height: auto;
+}
